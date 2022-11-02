@@ -19,15 +19,20 @@ public class LineComparison {
 		distance = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 		return distance;
 	}
-	public static void equalityCheck(double L1,double L2) {
-		String str1=String.valueOf(L1);
-			String str2=String.valueOf(L2);
-    if (str1.equals(str2)) {
-    	System.out.println("Two Lines are of equal lenght");
-    }
-    else {
-    	System.out.println("Two Lines are of not equal lenght");
-    }
+		public static void compareOfLenght(double lenght1, double lenght2) {
+			String str1=String.valueOf(lenght1);
+			String str2=String.valueOf(lenght2);
+
+			if (str1.compareTo(str2)== 0) {
+				System.out.println("Two lines are of equal lenght");
+			}
+			else if (str1.compareTo(str2)>0) {
+				System.out.println("lenght of First line is greater than second lenght of second line");
+			}
+			else {
+				System.out.println("lenght of First line is smaller than second lenght of second line");
+			}
+			
 		
 	}
 
@@ -41,7 +46,7 @@ public class LineComparison {
 		System.out.println("Enter details of second line");
 		double Length2 = line2.calculateLength();
 		System.out.println("Lenght of line2 = " + Length2);
-		equalityCheck(Length1,Length2);
+		compareOfLenght(Length1,Length2);
 		
 	}
 }
