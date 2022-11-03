@@ -20,13 +20,12 @@ public class LineComparison {
 		return distance;
 	}
 		public static void compareOfLenght(double lenght1, double lenght2) {
-			String str1=String.valueOf(lenght1);
-			String str2=String.valueOf(lenght2);
-
-			if (str1.compareTo(str2)== 0) {
+			Double x=lenght1;
+			Double y=lenght2;
+			if (x.compareTo(y)== 0) {
 				System.out.println("Two lines are of equal lenght");
 			}
-			else if (str1.compareTo(str2)>0) {
+			else if (x.compareTo(y)>0) {
 				System.out.println("lenght of First line is greater than second lenght of second line");
 			}
 			else {
