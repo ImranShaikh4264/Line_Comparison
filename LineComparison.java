@@ -1,7 +1,7 @@
 package com.bridgelab.linecomparison;
 
 import java.util.Scanner;
-
+// UC4 -comparison of line using oops concept
 public class LineComparison {
 	int x1, x2, y1, y2;
 	double distance;
@@ -41,9 +41,9 @@ public class LineComparison {
 		System.out.println("Enter details of first line");
 		double Length1 = line1.calculateLength();
 		System.out.println("Lenght of line1 = " + Length1);
-		LineComparison line2 = new LineComparison();
+		//LineComparison line2 = new LineComparison();
 		System.out.println("Enter details of second line");
-		double Length2 = line2.calculateLength();
+		double Length2 = line1.calculateLength();
 		System.out.println("Lenght of line2 = " + Length2);
 		compareOfLenght(Length1,Length2);
 		
